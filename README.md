@@ -1,6 +1,6 @@
 # Curso PHP usamos phpeasy para integrar una pokeapi 
 
-![Informacion POKEAPI]([http://url/to/img.png](https://raw.githubusercontent.com/darwinyusef/cursoPHPPOOplusPokeapi/master/views/img/api.png))
+![Informacion POKEAPI](https://raw.githubusercontent.com/darwinyusef/cursoPHPPOOplusPokeapi/master/views/img/api.png)
 
 Es posible crear api rest usando solo php sin intermediarios ni frameworks si requieres algo utra rapido
 
