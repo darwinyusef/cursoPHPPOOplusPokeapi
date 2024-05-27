@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body>
+    <h1>Hola: <span id="name"></span></h1>
+    <h2>Edad</h2>
+    <script>
+        fetch('http://localhost/phpeasy/api.php/quince')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                document.getElementById('name').textContent = data.name
+            });
+    </script> 
+</body>
+
+</html>

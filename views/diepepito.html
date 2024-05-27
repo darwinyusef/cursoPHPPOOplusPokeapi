@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding-left: 20%;
+            padding-right: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        span {
+            color: red; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aventura uno</h1>
+        <h2>Pepito caminaba muy alegre al lado de una gran montaña observando el paisaje de repente una piedra
+            (<span id="tamanio">Grande</span>) callo desde lo alto de la colina y
+        <span id="status"> Se muere y llega el CTI </span>
+        </h2>
+    </div>
+
+
+    <script>
+        fetch('http://localhost/phpeasy/api.php/diepepito/die')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                document.getElementById('tamanio').textContent = data.tamanio;
+                document.getElementById('status').textContent = data.status;   
+            });
+    </script>
+
+</body>
+
+</html>
